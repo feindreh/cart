@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom"
+
 import Card from "./card"
 
 import wolleIMG from "../img/wolle.jpg"
+import stoffIMG from "../img/stoff.webp"
+import haeckelIMG from "../img/hackeln.jpeg"
+import strickIMG from "../img/stricken.jpg"
 import hero from "../img/hero.jpg"
 
 function Home(){
@@ -11,11 +14,11 @@ function Home(){
                 <img src={hero} alt=""></img>
                 <div id="hero-text">Katharinas <br></br>Strick Shop</div>
             </div>
-            <div id="home">
+            <div className = "item-container" id="home">
                 <Card link="/Wolle" name="Wolle" logo={wolleIMG}/>
-                <Card link="/Stoff" name="Stoff" logo={wolleIMG}/>
-                <Card link="/Haeckel" name="Häckel" logo={wolleIMG}/>
-                <Card link="/Strick" name="Strick" logo={wolleIMG}/>
+                <Card link="/Stoff" name="Stoffe" logo={stoffIMG}/>
+                <Card link="/Haeckel" name="Häckeln" logo={haeckelIMG}/>
+                <Card link="/Strick" name="Stricken" logo={strickIMG}/>
             </div>
         </>
     )
