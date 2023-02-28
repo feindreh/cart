@@ -29,26 +29,26 @@ const stuff = (type,logo,name,description,price,unit) => {
 
 const warehouse = [];
 
-warehouse.push(stuff("stoff",stoff1,"Roter Stoff","1m² Stoff",3.5,"1m²"))
-warehouse.push(stuff("stoff",stoff2,"Pinker Stoff","1m² Stoff",3.5,"1m²"))
-warehouse.push(stuff("stoff",stoff3,"Grüner Stoff","1m² Stoff",3.5,"1m²"))
-warehouse.push(stuff("stoff",stoff4,"Blauer Stoff","1m² Stoff",3.5,"1m²"))
+warehouse.push(stuff("Stoff",stoff1,"Roter Stoff","1m² Stoff",3.5,"1m²"))
+warehouse.push(stuff("Stoff",stoff2,"Pinker Stoff","1m² Stoff",3.5,"1m²"))
+warehouse.push(stuff("Stoff",stoff3,"Grüner Stoff","1m² Stoff",3.5,"1m²"))
+warehouse.push(stuff("Stoff",stoff4,"Blauer Stoff","1m² Stoff",3.5,"1m²"))
 
-warehouse.push(stuff("wolle",wolle1,"Lila Wolle","200g Garn",4.80,"200g"))
-warehouse.push(stuff("wolle",wolle2,"Rosa Wolle","200g Garn",4.80,"200g"))
-warehouse.push(stuff("wolle",wolle3,"Türkise Wolle","300g Garn",5.80,"300g"))
-warehouse.push(stuff("wolle",wolle4,"Blau Wolle","300g Garn",5.80,"300g"))
+warehouse.push(stuff("Wolle",wolle1,"Lila Wolle","200g Garn",4.80,"200g"))
+warehouse.push(stuff("Wolle",wolle2,"Rosa Wolle","200g Garn",4.80,"200g"))
+warehouse.push(stuff("Wolle",wolle3,"Türkise Wolle","300g Garn",5.80,"300g"))
+warehouse.push(stuff("Wolle",wolle4,"Blau Wolle","300g Garn",5.80,"300g"))
 
-warehouse.push(stuff("hackeln",hackeln1,"Anfänger Set","Für Anfänger geeignet",12.50,"Set"))
-warehouse.push(stuff("hackeln",hackeln2,"Profi Set","Für Katharina geeignet",19.50,"Set"))
-warehouse.push(stuff("hackeln",hackeln3,"Garn Halter","Ökologisch abbaubar",7,"Halter"))
-warehouse.push(stuff("hackeln",hackeln4,"Garn Halter","Perfekt für Anfänger",12.50,"Halter"))
+warehouse.push(stuff("Haeckel",hackeln1,"Anfänger Set","Für Anfänger geeignet",12.50,"Set"))
+warehouse.push(stuff("Haeckel",hackeln2,"Profi Set","Für Katharina geeignet",19.50,"Set"))
+warehouse.push(stuff("Haeckel",hackeln3,"Garn Halter","Ökologisch abbaubar",7,"Halter"))
+warehouse.push(stuff("Haeckel",hackeln4,"Garn Halter","Perfekt für Anfänger",12.50,"Halter"))
 
-warehouse.push(stuff("stricken",stricken1,"Rundstricknadel","Perfekt für Fortgeschrittene",33.50,"Nadel"))
-warehouse.push(stuff("stricken",stricken2,"Stricketui","Aus echtem Leder",18,"Etui"))
-warehouse.push(stuff("stricken",stricken3,"Rundstricknadel","Anfänger Nadeln",33.50,"Nadel"))
-warehouse.push(stuff("stricken",stricken4,"Strick zubehör","Komplett Set für Neustarter",25,"Set"))
-warehouse.push(stuff("stricken",stricken5,"Rundstricknadel","Extra Robust für Kinder",9.50,"Nadel"))
-warehouse.push(stuff("stricken",stricken6,"Strickset","Ein Komplettes Set mit Nadeln",50,"Set"))
+warehouse.push(stuff("Strick",stricken1,"Rundstricknadel","Perfekt für Fortgeschrittene",33.50,"Nadel"))
+warehouse.push(stuff("Strick",stricken2,"Stricketui","Aus echtem Leder",18,"Etui"))
+warehouse.push(stuff("Strick",stricken3,"Rundstricknadel","Anfänger Nadeln",33.50,"Nadel"))
+warehouse.push(stuff("Strick",stricken4,"Strick zubehör","Komplett Set für Neustarter",25,"Set"))
+warehouse.push(stuff("Strick",stricken5,"Rundstricknadel","Extra Robust für Kinder",9.50,"Nadel"))
+warehouse.push(stuff("Strick",stricken6,"Strickset","Ein Komplettes Set mit Nadeln",50,"Set"))
 
 export default warehouse
