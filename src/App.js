@@ -1,11 +1,8 @@
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css"
 import Home from "./components/Home";
-import Wolle from "./components/Wolle";
-import Strick from "./components/Strick";
-import Haeckel from "./components/Haeckel";
-import Stoff from "./components/Stoff";
 import Cart from "./components/Cart";
+import Show from "./components/Show";
 
 import Buy from "./components/buy";
 
@@ -23,10 +20,10 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element ={<div><Home/></div>}/>
-        <Route path="/Wolle" element={<Wolle warehouse={warehouse}/>} />
-        <Route path="/Strick" element={<Strick warehouse={warehouse}/>}/>
-        <Route path="/Haeckel" element={<Haeckel warehouse={warehouse}/>}/>
-        <Route path="/Stoff" element={<Stoff warehouse={warehouse}/>}/>
+        <Route path="/Wolle" element={<Show warehouse={warehouse} type="wolle"/>} />
+        <Route path="/Strick" element={<Show warehouse={warehouse} type="stricken"/>}/>
+        <Route path="/Haeckel" element={<Show warehouse={warehouse} type="hackeln"/>}/>
+        <Route path="/Stoff" element={<Show warehouse={warehouse} type="stoff"/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/buy/:id" element={<Buy/>}/>
       </Routes>
