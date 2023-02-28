@@ -6,22 +6,21 @@ function Buy(){
 
     const item = warehouse.filter(ware => ware.id === +id)[0]
     const {logo,name,price,unit,description} = item
-    console.log(item)
-    console.log(logo,name,price,unit,description)
+
     return(
         <div className="buy">
-        <div class="imgWrap">
+        <div className="imgWrap">
             <img className = "buyIMG" src={logo}></img>
         </div>
-        <div class="buyWrap">
-            <div class="buyText">
-                <div class="buyName">
+        <div className="buyWrap">
+            <div className="buyText">
+                <div className="buyName">
                     {name}
                 </div>
-                <div class="buyDesc">
+                <div className="buyDesc">
                       {description}
                 </div>
-                <div class="buyPrice">
+                <div className="buyPrice">
                     Preis: {price}€ pro {unit}
                 </div>
             </div>
