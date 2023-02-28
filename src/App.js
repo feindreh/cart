@@ -9,8 +9,11 @@ import Cart from "./components/Cart";
 
 import Buy from "./components/buy";
 
+import warehouse from "./warehouse";
+
 
 function App() {
+  const cart = {}
   return (
     <div>
       <div id="nav">
@@ -20,10 +23,10 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element ={<div><Home/></div>}/>
-        <Route path="/Wolle" element={<Wolle/>} />
-        <Route path="/Strick" element={<Strick/>}/>
-        <Route path="/Haeckel" element={<Haeckel/>}/>
-        <Route path="/Stoff" element={<Stoff/>}/>
+        <Route path="/Wolle" element={<Wolle warehouse={warehouse}/>} />
+        <Route path="/Strick" element={<Strick warehouse={warehouse}/>}/>
+        <Route path="/Haeckel" element={<Haeckel warehouse={warehouse}/>}/>
+        <Route path="/Stoff" element={<Stoff warehouse={warehouse}/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/buy/:id" element={<Buy/>}/>
       </Routes>
