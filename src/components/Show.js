@@ -2,9 +2,9 @@ import Item from "./item"
 
 
 
-function Stoff(props){
-    const {warehouse} = props
-    const items = warehouse.filter((ware) => ware.type === "stoff")
+function Show(props){
+    const {warehouse,type} = props
+    const items = warehouse.filter((ware) => ware.type === type)
     return(
         <div className = "item-container">
             {items.map((ware)=>{
@@ -14,4 +14,4 @@ function Stoff(props){
     )
 }
 
-export default Stoff
+export default Show
