@@ -1,8 +1,9 @@
 import Item from "./item"
-import warehouse from "../warehouse"
 
 
-function Strick(){
+
+function Strick(props){
+    const {warehouse} = props
     const items = warehouse.filter((ware) => ware.type === "stricken")
     return(
         <div className = "item-container">

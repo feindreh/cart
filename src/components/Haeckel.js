@@ -1,7 +1,8 @@
 import Item from "./item"
-import warehouse from "../warehouse"
+
 
 function Haeckel(){
+    const {warehouse} = props
     const items = warehouse.filter((ware) => ware.type === "hackeln")
     return(
         <div className = "item-container">

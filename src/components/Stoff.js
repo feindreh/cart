@@ -1,9 +1,9 @@
 import Item from "./item"
 
-import warehouse from "../warehouse"
 
-function Stoff(){
 
+function Stoff(props){
+    const {warehouse} = props
     const items = warehouse.filter((ware) => ware.type === "stoff")
     return(
         <div className = "item-container">
