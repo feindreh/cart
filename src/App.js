@@ -25,7 +25,7 @@ function App() {
         <Route path="/Haeckel" element={<Haeckel/>}/>
         <Route path="/Stoff" element={<Stoff/>}/>
         <Route path="/cart" element={<Cart/>}/>
-        <Route path="/buy/:item" element={<Buy/>}/>
+        <Route path="/buy/:id" element={<Buy/>}/>
       </Routes>
     </div>
   );
