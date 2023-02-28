@@ -1,22 +1,27 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Male from "./components/male";
-import Female from "./components/female";
-import Cart from "./components/cart";
+import { Routes, Route, Link } from "react-router-dom";
+import "./App.css"
+import Home from "./components/Home";
+import Wolle from "./components/Wolle";
+import Strick from "./components/Strick";
+import Haeckel from "./components/Haeckel";
+import Stoff from "./components/Stoff";
+import Cart from "./components/Cart";
+
 
 function App() {
   return (
     <div>
-      <div>
+      <div id="nav">
         <Link to="/">Home</Link>
-        <Link to="/male">Male</Link>
-        <Link to="/female">Female</Link>
-        <Link to="/cart">Cart</Link>
+        <Link to="/cart">Einkaufswagen</Link>
 
       </div>
       <Routes>
-        <Route path="/" element ={<div>Home</div>}/>
-        <Route path="/male" element={<Male/>} />
-        <Route path="/female" element={<Female/>}/>
+        <Route path="/" element ={<div><Home/></div>}/>
+        <Route path="/Wolle" element={<Wolle/>} />
+        <Route path="/Strick" element={<Strick/>}/>
+        <Route path="/Haeckel" element={<Haeckel/>}/>
+        <Route path="/Stoff" element={<Stoff/>}/>
         <Route path="/cart" element={<Cart/>}/>
       </Routes>
     </div>

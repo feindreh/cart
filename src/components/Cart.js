@@ -1,9 +1,7 @@
-
-
 function Cart(){
     return(
         <div>
-            Shopping Cart
+            Cart
         </div>
     )
 }
