@@ -36,8 +36,8 @@ warehouse.push(stuff("stoff",stoff4,"Blauer Stoff","1m² Stoff",3.5,"1m²"))
 
 warehouse.push(stuff("wolle",wolle1,"Lila Wolle","200g Garn",4.80,"200g"))
 warehouse.push(stuff("wolle",wolle2,"Rosa Wolle","200g Garn",4.80,"200g"))
-warehouse.push(stuff("wolle",wolle3,"Blaue Wolle","300g Garn",5.80,"300g"))
-warehouse.push(stuff("wolle",wolle4,"Türkise Wolle","300g Garn",5.80,"300g"))
+warehouse.push(stuff("wolle",wolle3,"Türkise Wolle","300g Garn",5.80,"300g"))
+warehouse.push(stuff("wolle",wolle4,"Blau Wolle","300g Garn",5.80,"300g"))
 
 warehouse.push(stuff("hackeln",hackeln1,"Anfänger Set","Für Anfänger geeignet",12.50,"Set"))
 warehouse.push(stuff("hackeln",hackeln2,"Profi Set","Für Katharina geeignet",19.50,"Set"))
