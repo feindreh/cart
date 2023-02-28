@@ -1,9 +1,11 @@
 import Item from "./item"
-
+import { useParams } from "react-router-dom"
 
 
 function Show(props){
-    const {warehouse,type} = props
+    const {type} = useParams()
+    console.log(type)
+    const {warehouse} = props
     const items = warehouse.filter((ware) => ware.type === type)
     return(
         <div className = "item-container">
