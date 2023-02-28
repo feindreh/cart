@@ -7,6 +7,8 @@ import Haeckel from "./components/Haeckel";
 import Stoff from "./components/Stoff";
 import Cart from "./components/Cart";
 
+import Buy from "./components/buy";
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <Route path="/Haeckel" element={<Haeckel/>}/>
         <Route path="/Stoff" element={<Stoff/>}/>
         <Route path="/cart" element={<Cart/>}/>
+        <Route path="/buy/:item" element={<Buy/>}/>
       </Routes>
     </div>
   );
