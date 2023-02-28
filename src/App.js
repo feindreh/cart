@@ -20,10 +20,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element ={<div><Home/></div>}/>
-        <Route path="/Wolle" element={<Show warehouse={warehouse} type="wolle"/>} />
-        <Route path="/Strick" element={<Show warehouse={warehouse} type="stricken"/>}/>
-        <Route path="/Haeckel" element={<Show warehouse={warehouse} type="hackeln"/>}/>
-        <Route path="/Stoff" element={<Show warehouse={warehouse} type="stoff"/>}/>
+        <Route path="/:type" element={<Show warehouse={warehouse}/>} />
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/buy/:id" element={<Buy/>}/>
       </Routes>
