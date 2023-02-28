@@ -75,3 +75,40 @@ html{
     object-fit:cover;
     border-radius: 20px;
 }
+
+/*Buy*/
+.imgWrap{
+    width:70%;
+    margin: 10% 15% 10% 15%;
+}
+
+.buyIMG{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    border-radius: 20px;
+}
+.buy{
+    text-align: center;
+    
+}
+.buyWrap{
+    display: flex;
+    justify-content: center;
+}
+.buyText{
+}
+.buyName{
+    font-weight: bold;
+    font-size: 22px;
+}
+.buyDesc{
+    font-size: 18px;
+}
+.buyPrice{
+    font-size:18px;
+}
+.buyButton{
+    font-size:18px;
+    
+}
