@@ -1,5 +1,4 @@
-import { useState } from "react"
-import warehouse from "../warehouse"
+import { Link } from "react-router-dom"
 
 function Cart(props){
 
@@ -24,9 +23,17 @@ function Cart(props){
     if(cartArr.length ===0){return <></>}
     let id = 0
     return(
-        <div>
-            {cartArr.map((ware)=>{id++;return <div key={id}>{ware.name} {ware.price.toFixed(2)} € x {ware.count} = {(ware.price * ware.count).toFixed(2)} €</div>})}
-            <div>Summe : {Sum} €</div>
+        <div id="cartWrap">
+            <div id="cart">
+                {cartArr.map((ware)=>{id++;return (
+                    <div key={id} className="cartText">
+                        <div className ="cartName">{ware.name} {ware.price.toFixed(2)} € </div> <div className ="cartCount">x{ware.count}</div> <div className ="cartEquals">=</div> <div className ="cartPrice">{(ware.price * ware.count).toFixed(2)}€</div>
+                    </div>
+                )})}
+                <div className ="cartSum">Summe : {Sum} €</div>
+            </div>
+            <Link to="/"><button type="button" id="goon">Weiter Shoppen</button></Link>
+            <Link to="/fin"><button type="button" id="fin">Bezahlen</button></Link>
         </div>
     )
 }
