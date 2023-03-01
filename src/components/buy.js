@@ -3,7 +3,7 @@ import warehouse from "../warehouse"
 import Cart from "./Cart"
 
 function Buy(props){
-    const {add} = props
+    const {add,cart} = props
     const {id} = useParams()
 
 
@@ -34,7 +34,7 @@ function Buy(props){
             <div className="shopit">
                 <button type="button" onClick={()=>[add(id)]}>In den Einkaufswagen</button>
             </div>
-            <div className="smallCart"><Cart/></div>
+            <div className="smallCart"><Cart cart={cart}/></div>
         </div>
     )
 }
