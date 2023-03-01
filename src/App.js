@@ -6,6 +6,7 @@ import Cart from "./components/Cart";
 import Show from "./components/Show";
 
 import Buy from "./components/buy";
+import Fin from "./components/fin";
 
 import warehouse from "./warehouse";
 
@@ -44,8 +45,9 @@ function App() {
       <Routes>
         <Route path="/" element ={<div><Home/></div>}/>
         <Route path="/:type" element={<Show warehouse={warehouse}/>} />
-        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/cart" element={<Cart cart={cart}/>}/>
         <Route path="/buy/:id" element={<Buy add={addToCart} cart={cart}/>}/>
+        <Route path="/fin" element={<Fin/>}></Route>
       </Routes>
     </div>
   );
