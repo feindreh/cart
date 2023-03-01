@@ -1,4 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
 import "./App.css"
 import Home from "./components/Home";
 import Cart from "./components/Cart";
@@ -10,7 +11,13 @@ import warehouse from "./warehouse";
 
 
 function App() {
-  const cart = {}
+
+  const [cart,setCart] = useState({})
+
+  function addToCart(id){
+    console.log("Add id",id,"to Cart")
+  }
+
   return (
     <div>
       <div id="nav">
@@ -22,7 +29,7 @@ function App() {
         <Route path="/" element ={<div><Home/></div>}/>
         <Route path="/:type" element={<Show warehouse={warehouse}/>} />
         <Route path="/cart" element={<Cart/>}/>
-        <Route path="/buy/:id" element={<Buy/>}/>
+        <Route path="/buy/:id" element={<Buy add={addToCart}/>}/>
       </Routes>
     </div>
   );
