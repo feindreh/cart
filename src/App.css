@@ -28,6 +28,7 @@ a{
 html{
     height:100vh;
     background-color: rgb(255, 255, 255);
+    min-width: 350px;
 }
 /*Nav*/
 
@@ -101,38 +102,59 @@ html{
 }
 
 /*Buy*/
-.imgWrap{
-    width:70%;
-    margin: 10% 15% 10% 15%;
+.gigaWrap{
+    display: flex;
+    justify-content: center;
 }
-
-.buyIMG{
+.imgWrap{
     width:100%;
-    height:auto;
-    object-fit:cover;
+}
+.buyIMG{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
     border-radius: 20px;
 }
 .buy{
     text-align: center;
-    
+    max-width: 500px;
 }
+
 .buyWrap{
-    display: flex;
-    justify-content: center;
+    margin-bottom:20px;
 }
-.buyText{
+
+.buyBottom{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
-.buyName{
-    font-weight: bold;
-    font-size: 22px;
+.shopit{
 }
-.buyDesc{
-    font-size: 18px;
+
+
+/*CART*/
+#cartWrap{
+    padding:10px;
+    text-align: center;
 }
-.buyPrice{
-    font-size:18px;
+#cart{
+    padding:20px;
 }
-.buyButton{
-    font-size:18px;
-    
+
+.cartText{
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 2fr;
+    text-align: center;
+    margin-bottom: 5px;
 }
+.cartName{
+    text-align: start;
+}
+.cartPrice{
+    text-align: end;
+}
+.cartSum{
+    text-align: center;
+}
+
+
